@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(43, 45, 54);
+    background-size: cover;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 80px;
+    border: solid 10px transparent ;
+    padding: 0px 0px 10px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbarButton{
+    color: #ffffff;
+    font-size: x-large;
+    order: 1;
+}
+
+#homeButton {
+    width: 60px;
+    color: #ffffff;
+    font-size: large;
+    order: 2;   
+}
+
+#linkButton {
+    width: 40px;
+    color: gray;
+    order: 3;
+}
+
+#dropdownButton {
+    border: 0px;
+    color: gray;
+    font-size: 18px;
+    order: 4;
+}
+
+#disableButton {
+    width: 150px;
+    color: rgb(103, 103, 103);
+    order: 5;
+}
+
+input {
+    padding: 0;
+    border: 0;
+    border-radius: 3px;
+    width: 200px;
+    height: 30px;
+}
+
+#searchText {
+    padding: 10px;
+    border: 0;
+    margin: 0;
+    order: 6;
+}
+
+#searchButton {
+    background-color: rgb(43, 45, 54);;
+    padding: 8px 8px 8px 8px;
+    margin: 7px;
+    border: solid 1px green;
+    border-radius: 3px;
+    color: green;
+    order: 7;
+}
+
+#searchButton:hover {
+    background-color: green;
+    color: white;
+    order: 7;
+}
+
+select{
+    background-color: var(--color-navbar);
+    color: gray;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    border-width: 0px;
+}
+
+div {
+    border: 0px;
+}
+
