@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
-    <head>
-        <title>
-            Navbar
-        </title>
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    
+  <head>
+    <title>Navbar</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <div class="hamburguer">
+    <input type="checkbox" />
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
     <nav>
-       <ul>
+      <ul>
         <div class="flexbox">
-            <li>
-                <a href="#" id="navbarButton" ><b>Navbar</b></a>
-            </li>
-        
-            <li>
-                <a href="#" id="homeButton">Home</a>
-            </li>
-            <li>
-                <a href="#" id="linkButton">Link</a>
-            </li>
+          <li>
+            <a href="#" id="navbarButton"><b>Navbar</b></a>
+          </li>
 
-            <!--<li>
+          <li>
+            <a href="#" id="homeButton">Home</a>
+          </li>
+          <li>
+            <a href="#" id="linkButton">Link</a>
+          </li>
+
+          <!--<li>
                 <a href="#" class="dropdownButton">Dropdown</a>
                 
             </li>-->
-            <li >
-                <div>
-                    <select >
-                        <option>
-                        <a href="#">Dropdown</a>
-                        </option>
-                    </select>
-                </div>    
-            </li>
+          <li>
+            <div>
+              <select>
+                <option>
+                  <a href="#">Dropdown</a>
+                </option>
+              </select>
+            </div>
+          </li>
 
-            <li>
-                <a href="#" id="disableButton">Disabled</a>
-            </li>
-            
-            <li class="search1">
-                <div id="searchText">
-                <label name="Search"></label>
-                <input type="search" name="Search" placeholder=" Search" autofocus />
-                </div>
-            </li>
+          <li>
+            <a href="#" id="disableButton">Disabled</a>
+          </li>
 
-            <li>
-                <button id="searchButton" name="Search">Search</button>
-            </li>
+          <li class="search1">
+            <div id="searchText">
+              <label name="Search"></label>
+              <input
+                type="search"
+                name="Search"
+                placeholder=" Search"
+                autofocus
+              />
+            </div>
+          </li>
+
+          <li>
+            <button id="searchButton" name="Search">Search</button>
+          </li>
         </div>
-    </ul> 
-       
+      </ul>
     </nav>
-    <hr/>
-    
-    <body></body>
+  </div>
+  <hr />
+
+  <body></body>
 </html>

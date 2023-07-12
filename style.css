@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --hamburguer: 48px;
+}
+
 .flexbox {
     display: flex;
     flex-direction: row;
@@ -115,3 +120,76 @@ div {
     border: 0px;
 }
 
+.hamburguer input[type="checkbox"], .hamburguer .fa-bars, .hamburguer .fa-times  {
+    position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: var(--hamburguer);
+        height: var(--hamburguer);
+        background-color: rgb(43, 45, 54);
+        width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .flexbox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #disableButton {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search1 {
+        margin: 0px;
+    }
+
+    .hamburguer {
+        text-decoration: none;
+        display: block;
+        border-bottom: 2px solid white;
+        min-height: var(--hamburguer);
+        color: white;
+    }
+
+    .hamburguer input[type="checkbox"], .hamburguer .fa-bars, .hamburguer .fa-times {
+        margin: 1;
+        width: 100%;
+      }
+
+    .hamburguer .fa-bars, .hamburguer .fa-times {
+        pointer-events: none;
+        font-size: var(--hamburguer);
+    }
+
+    .hamburguer input[type="checkbox"] {
+        opacity: 0;
+    }
+
+    .hamburguer {
+        color: black;
+        position: relative;
+        background: white;
+        min-height: var(--hamburguer);
+    }
+
+    .hamburguer nav {
+        display: none;
+    }
+
+    .hamburguer input:checked ~ nav {
+        display: block;
+    }
+
+    .hamburguer input:checked ~ .fa-bars {
+        display: none;
+    }
+
+    .hamburguer input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+}
